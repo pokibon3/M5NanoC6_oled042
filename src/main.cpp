@@ -35,10 +35,10 @@ void setup(void) {
 
 void face()
 {
-    u8g2.clearBuffer();                  // clear the internal memory
-    u8g2.drawBox(33, 24, 8, 2);
-    u8g2.drawDisc(26, 14, 1);
-    u8g2.drawDisc(46, 14, 1);
+    u8g2.clearBuffer();                 // clear the internal memory
+    u8g2.drawBox(33, 24, 8, 2);         //  mouse
+    u8g2.drawDisc(26, 14, 1);           //  right eye
+    u8g2.drawDisc(46, 14, 1);           //  left  eye
     u8g2.drawFrame(14, 0, 44, 40);
     u8g2.sendBuffer();  // transfer internal memory to the display
 }
